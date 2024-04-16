@@ -1,0 +1,68 @@
+.pics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40vh;
+    left: calc(50% - 330px);
+}
+
+.card{
+    position: relative;
+    left: 0px;
+    width: 150px;
+    height: 200px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.box img{
+    height: 200px;
+    width: 150px;
+     background-size: cover;
+}
+
+.box2 img{
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+}
+
+.card:nth-child(1){
+    background-color: blue;
+}
+
+.card:nth-child(2){
+    background-color: brown;
+}
+
+.card:nth-child(3){
+    background-color: cadetblue;
+}
+
+.card:nth-child(4){
+   background-color: chocolate;
+}
+
+.card:not(:first-child){
+    margin-left: -55px;
+}
+
+.card:hover{
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card:hover img {
+    transform: translateY(-16px);
+}
